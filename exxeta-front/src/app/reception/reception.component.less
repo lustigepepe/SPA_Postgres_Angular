@@ -1,0 +1,104 @@
+@import (less) "../../styles.css";
+
+.reception {
+  margin: 5px 25px 21px;
+  min-width: 300px;
+  min-height: 150px;
+  border: 2px solid #b5aea16f;
+  @media screen and (max-width: 35em) {
+    min-height: 220px;
+  }
+}
+
+.reception-edit {
+  margin: 5px 25px 21px;
+  min-width: 300px;
+  min-height: 150px;
+  border: 2px solid #b5aea16f;
+  @media screen and (max-width: 47em) {
+    min-height: 220px;
+  }
+}
+
+.reception-container {
+  position: relative;
+  margin: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.title-cell {
+  display: table-cell;
+  position: absolute;
+  top: -28px;
+  left: -2px;
+}
+
+.clickAvailable {
+  display: flex;
+  flex-flow: row nowrap;
+  // justify-content: flex-end;
+}
+
+.field-form {
+  width: 150px;
+}
+
+.reception-button-edit {
+  display: table-cell;
+  position: relative;
+  // align-items: center;
+  top: 50px;
+}
+.reception-edit-form {
+  // display: table-cell;
+  position: relative;
+  top: 50px;
+}
+
+.toggle {
+  margin: 0 10px 0 0;
+  position: relative;
+  top: -4px;
+}
+.finish {
+  top: -4px;
+}
+
+section {
+  display: table;
+}
+
+.example-label {
+  display: table-cell;
+  font-size: 14px;
+  margin-left: 8px;
+  min-width: 120px;
+}
+
+.reception-edit-table-row {
+  display: table-row;
+  width: 900px;
+}
+
+.reception-edit-table-row .mat-mdc-button-base {
+  margin: 8px 12px 8px 0;
+}
+
+.example-flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.example-button-container {
+  display: flex;
+  justify-content: center;
+  width: 120px;
+}
+
+mat-form-field {
+  margin-right: 12px;
+}

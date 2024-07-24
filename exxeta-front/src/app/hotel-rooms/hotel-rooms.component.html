@@ -1,0 +1,35 @@
+<div class="general-margin">
+  <div class="flex-row">
+    <h2 class="margin-title">{{ title }}</h2>
+  </div>
+  <div class="table-container mat-elevation-z8">
+    <table cdk-table [dataSource]="dataSource">
+      <!-- RoomNumber Column -->
+      <ng-container cdkColumnDef="roomNumber">
+        <th cdk-header-cell *cdkHeaderCellDef>Room number</th>
+        <td cdk-cell *cdkCellDef="let element">{{ element.roomNumber }}</td>
+      </ng-container>
+
+      <!-- RoomType Column -->
+      <ng-container cdkColumnDef="roomType">
+        <th cdk-header-cell *cdkHeaderCellDef>Room type</th>
+        <td cdk-cell *cdkCellDef="let element">{{ element.roomType }}</td>
+      </ng-container>
+
+      <!-- MiniBar Column -->
+      <ng-container cdkColumnDef="miniBar">
+        <th cdk-header-cell *cdkHeaderCellDef>Minibar</th>
+        <td cdk-cell *cdkCellDef="let element">{{ element.miniBar }}</td>
+      </ng-container>
+
+      <!-- Available Column -->
+      <ng-container cdkColumnDef="available">
+        <th cdk-header-cell *cdkHeaderCellDef>Available</th>
+        <td cdk-cell *cdkCellDef="let element">{{ element.available }}</td>
+      </ng-container>
+
+      <tr cdk-row *cdkRowDef="let row; columns: displayedColumns"></tr>
+      <tr cdk-header-row *cdkHeaderRowDef="displayedColumns"></tr>
+    </table>
+  </div>
+</div>
